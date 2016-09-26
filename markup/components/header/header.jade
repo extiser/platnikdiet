@@ -1,0 +1,5 @@
+mixin header(data, page)
+  - var modiffers = attributes.class || '';  
+  header.header(class="#{modiffers}")
+    .header__wrapper
+      a(href="#" title="").header__logo

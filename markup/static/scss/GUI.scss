@@ -1,0 +1,80 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.wrapper {
+  width: 1002px;
+  margin: auto;
+  @media screen and (max-width: 960px) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.button {
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+
+  border: 0;
+
+  font-family: $RobotoCondensed-Regular;
+
+  @include transition;
+  &._v-big {
+    width: 397px;
+    height: 64px;
+    margin-top: 20px;
+
+    font-size: rem-calc(22);
+    line-height: rem-calc(60);
+    @media screen and (max-width: 460px) {
+      width: 290px;
+      height: 55px;
+
+      line-height: rem-calc(55);
+    }
+  }
+  &._big {
+    width: 360px;
+    height: 67px;
+
+    font-size: rem-calc(30);
+    line-height: rem-calc(64);
+    @media screen and (max-width: 460px) {
+      width: 290px;
+      height: 55px;
+
+      font-size: rem-calc(28);
+      line-height: rem-calc(55);
+    }
+  }
+  &._medium {
+    width: 320px;
+    height: 64px;
+
+    font-size: rem-calc(22);
+    line-height: rem-calc(60px);
+    @media screen and (max-width: 460px) {
+      width: 290px;
+      height: 55px;
+
+      line-height: rem-calc(55);
+    }
+  }
+  &._gray {
+    color: $white;
+    background: #bdbdbd;
+  }
+  &._green {
+    color: $white;
+    background-color: $green;
+  }
+  &:hover {
+    background-color: $green + #111;
+  }
+  &:focus {
+    outline: none;
+  }
+}

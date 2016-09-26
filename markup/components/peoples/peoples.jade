@@ -1,0 +1,20 @@
+mixin peoples(data)
+  .peoples
+    .peoples__wrapper
+      .peoples__title Наш курс похудения работает на все 100%
+
+      .peoples-list
+        for item in peoples
+          .peoples-list-item
+            .peoples-list-item__image
+              img(src="%=static=%images/assets/peoples/#{item.img}" alt="")
+              .peoples-list-item__weight._before 82 
+                span кг
+              .peoples-list-item__weight._after 60 
+                span кг
+            .peoples-list-item__content
+              .peoples-list-item__name #{item.name}
+              .peoples-list-item__age #{item.age}
+              .peoples-list-item__text #{item.text}
+
+      a(href="#" title="").button._big._green Начать худеть

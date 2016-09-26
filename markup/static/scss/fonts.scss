@@ -1,0 +1,8 @@
+@include font-face(RobotoCondensed-Regular, "../fonts/RobotoCondensed-Regular");
+$RobotoCondensed-Regular: 'RobotoCondensed-Regular', Helvetica, Arial, sans-serif;
+
+@include font-face(Merriweather-Bold, "../fonts/Merriweather-Bold");
+$Merriweather-Bold: 'Merriweather-Bold', Helvetica, Arial, sans-serif;
+
+@include font-face(Merriweather-Regular, "../fonts/Merriweather-Regular");
+$Merriweather-Regular: 'Merriweather-Regular', Helvetica, Arial, sans-serif;

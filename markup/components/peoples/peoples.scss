@@ -1,0 +1,110 @@
+.peoples {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__title {
+    text-align: center;
+
+    color: $black;
+
+    font-family: $Merriweather-Bold;
+    font-size: rem-calc(29);
+  }
+  .button {
+    margin: auto;
+  }
+}
+
+.peoples-list {
+  display: flex;
+
+  margin-top: 40px;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.peoples-list-item {
+  position: relative;
+
+  display: flex;
+
+  box-sizing: border-box;
+  width: 48%;
+  margin-bottom: 30px;
+  padding: 15px;
+
+  border: 1px dashed #cecece;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
+  &__image {
+    position: relative;
+
+    border-bottom: 4px solid $green;
+    img {
+      display: block;
+      @media screen and (max-width: 320px) {
+        width: 100px;
+      }
+    }
+  }
+  &__weight {
+    position: absolute;
+    bottom: 5px;
+
+    padding: 0 4px;
+
+    color: $white;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(18);
+    span {
+      font-size: rem-calc(12);
+    }
+    &._before {
+      left: 5px;
+
+      background: $orange;
+    }
+    &._after {
+      right: 5px;
+
+      background: $green;
+    }
+  }
+  &__content {
+    margin-left: 20px;
+  }
+  &__name {
+    padding-top: 5px;
+
+    color: $green;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(18);
+    font-weight: bold;
+  }
+  &__age {
+    margin-bottom: 10px;
+
+    color: $black;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(11);
+    font-style: italic;
+  }
+  &__text {
+    color: $black;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+  }
+}

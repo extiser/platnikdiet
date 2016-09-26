@@ -1,0 +1,24 @@
+.header {
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__logo {
+    display: block;
+
+    @include bg($logo);
+  }
+  &._main {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding-top: 41px;
+  }
+  &._inside {
+    padding: 20px 0;
+
+    border-bottom: 1px dashed #cfcfcf;
+  }
+}

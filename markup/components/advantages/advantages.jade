@@ -1,0 +1,13 @@
+mixin advantages(data)
+  .advantages
+    .advantages__wrapper
+      .advantages__title Похудейте в домашних условиях
+
+      .advantages-list
+        for item in advantages
+          .advantages-list-item
+            .advantages-list-item__top
+              img(src="%=static=%images/assets/advantages/#{item.img}" alt="")
+            .advantages-list-item__bottom #{item.text}
+
+      a(href="#" title="").button._big._green Начать худеть

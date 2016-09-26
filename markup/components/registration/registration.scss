@@ -1,0 +1,225 @@
+.registration {
+  background: $beige;
+  &__wrapper {
+    position: relative;
+
+    @extend .wrapper;
+    &._reg4-1 {
+      padding-bottom: 100px;
+      @media screen and (max-width: 760px) {
+        padding-bottom: 0;
+      }
+      .registration-block__subtitle {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.registration-block {
+  position: relative;
+
+  box-sizing: border-box;
+  max-width: 860px;
+  min-height: 498px;
+  padding: 30px 0 100px 320px;
+  @media screen and (max-width: 760px) {
+    padding-left: 0;
+  }
+  &._center-mode {
+    padding-top: 150px;
+    padding-bottom: 350px;
+    @media screen and (max-width: 760px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  &:before {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+
+    display: block;
+
+    width: 155px;
+    height: 498px;
+
+    content: "";
+
+    background: url(%=static=%content/girl-1.jpg);
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
+  }
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    color: $blue;
+
+    font-family: $Merriweather-Regular;
+    font-size: rem-calc(22);
+    line-height: rem-calc(33);
+    a {
+      color: $blue;
+    }
+    &._nomargin {
+      margin-bottom: 0;
+    }
+  }
+  &__subtitle {
+    color: #7e7e7e;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(15);
+    line-height: rem-calc(23);
+  }
+  &__error {
+    margin-bottom: 20px;
+
+    color: #de0707;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(15);
+    line-height: rem-calc(23);
+  }
+}
+
+.registration-block-list {
+  color: #7e7e7e;
+
+  font-family: $RobotoCondensed-Regular;
+  font-size: rem-calc(12);
+  line-height: rem-calc(19);
+}
+
+.registration-block-check {
+  span {
+    padding-left: 5px;
+  }
+}
+
+.registration-block-info-user {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+  &__left,
+  &__right {
+    color: $black;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(14);
+
+    @include nl;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  &__left {
+    margin-right: 15px;
+  }
+  &__right {
+    color: #7e7e7e;
+  }
+}
+
+.registration-block-form {
+  input {
+    height: 58px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &._reg1 {
+    width: 320px;
+    @media screen and (max-width: 760px) {
+      margin: auto;
+    }
+    @media screen and (max-width: 320px) {
+      width: 290px;
+    }
+  }
+  &__label {
+    margin-bottom: 10px;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(16);
+    font-weight: bold;
+    span {
+      display: block;
+
+      color: $black;
+
+      font-size: rem-calc(14);
+      font-weight: normal;
+    }
+  }
+  &__field {
+    &._iconed {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 11px;
+        left: 15px;
+
+        content: "";
+
+        @include bg($phone);
+      }
+      input {
+        padding-left: 50px;
+      }
+    }
+    &._inline {
+      display: flex;
+
+      margin-bottom: 15px;
+
+      align-items: center;
+      justify-content: space-between;
+      img {
+        display: block;
+
+        margin-right: 10px;
+      }
+      input {
+        margin-bottom: 0;
+      }
+    }
+    input {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+  a {
+    margin-right: 20px;
+
+    color: #5798ae;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(12);
+  }
+  &__links {
+    + div {
+      padding-bottom: 20px;
+    }
+  }
+  &__inline {
+    display: flex;
+
+    justify-content: space-between;
+    .registration-block-form__label {
+      min-width: 215px;
+    }
+    .registration-block-form__field {
+      min-width: 180px;
+      input {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+extends _layout
+
+block header
+  +header()._inside
+
+block content
+  +registration-1-2(data, 'reg1-2')
+
+block footer
+  +footer(data, 'inside')._inside
