@@ -3,3 +3,20 @@ mixin header(data, page)
   header.header(class="#{modiffers}")
     .header__wrapper
       a(href="#" title="").header__logo
+
+mixin header-profile(data, page)
+  - var modiffers = attributes.class || '';  
+  header.header(class="#{modiffers}")
+    .header__wrapper
+      a(href="#" title="").header__logo
+      .header-menu
+        a(href="#" title="").header-menu__item Обучающие курсы
+        a(href="#" title="").header-menu__item Мой профиль
+      .header-user
+        .header-user__img
+          img(src="%=static=%images/content/user.png" alt="")
+        .header-user__info
+          .header-user__name Пустовой Денис 
+          .header-user__mail denver2@yandex.ru
+          a(href="#" title="").header-user__exit выйти
+

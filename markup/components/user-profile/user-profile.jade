@@ -1,0 +1,81 @@
+mixin user-profile(data)
+  .user-profile
+    .user-profile-left
+      .user-profile-menu
+        a(href="#" title="").user-profile-menu__item Приветствие
+        a(href="#" title="").user-profile-menu__item 1 модуль
+        a(href="#" title="").user-profile-menu__item 2 модуль
+        a(href="#" title="").user-profile-menu__item 3 модуль
+        a(href="#" title="").user-profile-menu__item 4 модуль
+        a(href="#" title="").user-profile-menu__item 5 модуль
+        a(href="#" title="").user-profile-menu__item._anactive 6 модуль
+        a(href="#" title="").user-profile-menu__item._anactive 7 модуль
+        a(href="#" title="").user-profile-menu__item._anactive 8 модуль
+        a(href="#" title="").user-profile-menu__item._anactive 9 модуль
+        a(href="#" title="").user-profile-menu__item._anactive 10 модуль
+    .user-profile-right
+      .profile-settings
+        .profile-settings__title Мой профиль
+
+        form().profile-settings-form
+          .profile-settings-form-row
+            label.profile-settings-form__label Фамилия
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Имя 
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Отчество
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Email
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Профессия
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Телефон 
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label День рождения 
+            .profile-settings-form-inline
+              .profile-settings-form__select._small
+                select
+                  option 15
+              .profile-settings-form__select._big
+                select
+                  option Май
+              .profile-settings-form__select._medium
+                select
+                  option 1970
+          .profile-settings-form-row
+            label.profile-settings-form__label Пол
+            .profile-settings-form__radio-group
+              label
+                input(type="radio" name="sex")
+                span Мужчина
+              label
+                input(type="radio" name="sex")
+                span Женщина
+          .profile-settings-form-row
+            label.profile-settings-form__label Страна
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            label.profile-settings-form__label Город
+            .profile-settings-form__field
+              input(type="text" value="")
+          .profile-settings-form-row
+            input(type="submit" value="Сохранить").button._green._small
+
+      .profile-ava
+        .profile-ava__img
+          img(src="%=static=%images/content/prof.png" alt="")
+        .profile-ava__btn Загрузить фото
+          input(type="file")

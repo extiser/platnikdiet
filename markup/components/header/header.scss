@@ -21,4 +21,74 @@
 
     border-bottom: 1px dashed #cfcfcf;
   }
+  &._profile {
+    .header__wrapper {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.header-menu {
+  &__item {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    text-decoration: none;
+
+    color: $black;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(16);
+
+    @include transition;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.header-user {
+  display: flex;
+
+  max-width: 220px;
+
+  font-family: $RobotoCondensed-Regular;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__img {
+    margin-right: 15px;
+  }
+  &__info {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__name {
+    width: 100%;
+
+    color: $green;
+
+    font-size: rem-calc(16);
+  }
+  &__mail {
+    color: #999;
+
+    font-size: rem-calc(12);
+  }
+  &__exit {
+    text-decoration: none;
+
+    color: $blue;
+
+    font-size: rem-calc(12);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

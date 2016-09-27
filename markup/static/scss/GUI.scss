@@ -63,6 +63,12 @@
       line-height: rem-calc(55);
     }
   }
+  &._small {
+    width: 185px;
+    height: 44px;
+
+    font-size: rem-calc(18);
+  }
   &._gray {
     color: $white;
     background: #bdbdbd;

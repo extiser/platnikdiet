@@ -1,0 +1,10 @@
+extends _layout
+
+block header
+  +header-profile()._inside._profile
+
+block content
+  +user-profile()
+
+block footer
+  +footer(data, 'main')._main
