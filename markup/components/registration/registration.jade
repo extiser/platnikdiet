@@ -145,85 +145,23 @@ mixin registration-4-2(data, page, noRegBlList)
 
           input(type="submit" value="Ок").button._medium._green
 
-//- mixin registration(data, page, noRegBlList)
-//-   .registration
-//-     .registration__wrapper
-//-       .registration-block
-//-         if (page == 'reg3-1')
-//-           .registration-block__title._nomargin РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ ШАГ 1 ИЗ 2
-//-           .registration-block__subtitle На указанный вами номер телефона будет отправлено SMS c кодом подтверждения. Он потребуется вам для подтверждения оплаты.
-//-           .registration-block__error Ошибка
-//-         if (page == 'reg3-2')
-//-           .registration-block__title._nomargin РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ ШАГ 2 ИЗ 2
-//-           .registration-block__error Ошибка
-//-         if (page == 'reg1-2')
-//-           .registration-block-list
-//-             .registration-block-list__item Услуга: подписка .
-//-             .registration-block-list__item Контент-провайдер: .
-//-             .registration-block-list__item Стоимость: руб. с НДС в сутки
-//-             .registration-block-check 
-//-               input(type="checkbox")
-//-               span Мне исполнилось 18 лет и я согласен с правилами предоставления услуги.
-//-         if (page == 'reg3-2')
-//-           .registration-block-info-user
-//-             ul.registration-block-info-user__left
-//-               li Ваш номер телефона
-//-               li Стоимость подключения подписки  
-//-               li Срок действия подписки
-//-               li Контакты провайдера 
-//-             ul.registration-block-info-user__right
-//-               li +7 (903) 977-07-07
-//-               li 123 руб.
-//-               li 9.04.2016 12:22:01
-//-               li ООО "Диджитал Провайдер", 
-//-               li help@digi24.pro, 8(800)2007411
+mixin registration2-1(data, page, noRegBlList)
+  .registration
+    .registration__wrapper
+        .registration-block-form._reg2-1
+            .registration-block-form__inline-custom
+              .registration-block-form__label ВВЕДИТЕ КОД АКТИВАЦИИ, <br>ПОЛУЧЕННЫЙ В SMS:
+              .registration-block-form__field
+                input(type="text" value="")
+                span.registration-block-form__error * Неверный код
+                a(href="#" title="") (выслать SMS повторно)
 
-//-         if (page == 'reg1')
-//-           .registration-block__title Для получения полного доступа к сайту Вам необходимо ввести свой номер телефона. На него придет СМС с кодом доступа.
-//-         else if (page == 'reg1-2')
-//-           .registration-block__title На Ваш номер, отправлено СМС с кодом доступа. Если Вы неверно ввели телефон - 
-//-             a(href="#" title="") ввести заново.
-//-             |  Если Вам не пришел код - 
-//-             a(href="#" title="") отправить код повторно.
-
-//-         .registration-block-form._reg1
-//-           if (page == 'reg1')
-//-             .registration-block-form__label Введите номер телефона:
-//-             .registration-block-form__field._iconed
-//-               input(type="text" value="" placeholder)
-//-           else if (page == 'reg1-2')
-//-             .registration-block-form__label Введите полученый код:
-//-             .registration-block-form__field
-//-               input(type="text" value="" placeholder)
-//-           else if (page == 'reg3-1')
-//-             .registration-block-form__label Введите номер телефона:
-//-               span формат: 7XXXYYYYYYY
-//-             .registration-block-form__field._iconed
-//-               input(type="text" value="" placeholder)
-
-//-             .registration-block-form__label Введите цифры, показанные на картинке
-//-             .registration-block-form__field._inline
-//-               img(src="%=static=%images/content/captcha.png" alt="")
-//-               input(type="text" value="" placeholder)
-
-//-             .registration-block-form__links
-//-               a(href="#" title="") Обновить код 
-//-             .registration-block-form__links
-//-               a(href="#" title="") Пользовательское соглашение
-
-//-           else if (page == 'reg3-2')
-//-             .registration-block-form__inline
-//-               .registration-block-form__label Введите код активации, полученный в SMS
-//-               .registration-block-form__field
-//-                 input(type="text" value="")
-//-                 a(href="#" title="") Выслать SMS повторно
-
-//-           if (page != 'reg3-2')
-//-             input(type="submit" value="Отправить").button._medium._green
-//-             input(type="submit" value="Отмена").button._medium._gray
-//-           else if (page == 'reg3-2')
-//-             input(type="submit" value="Отправить").button._big._green
-
-//-           if (page != 'reg3-1')
-//-             a(href="#" title="") Ввести другой номер
-//-             a(href="#" title="") Отправить код повторно
+            .registration-block-form__inline-custom._captcha
+              .registration-block-form__label ВВЕДИТЕ СИМВОЛЫ С КАРТИНКИ
+                img(src="%=static=%images/content/captcha.png" alt="")
+              .registration-block-form__field
+                input(type="text" value="")
+                .registration-block-form__error Необходимо ввести символыс картинки.
+                .registration-block-form__error * Вы неверно ввели символы с картинки
+            
+            input(type="submit" value="Получить доступ").button._x-big._green

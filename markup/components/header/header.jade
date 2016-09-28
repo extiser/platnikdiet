@@ -20,3 +20,10 @@ mixin header-profile(data, page)
           .header-user__mail denver2@yandex.ru
           a(href="#" title="").header-user__exit выйти
 
+mixin header-single(data, page)
+  - var modiffers = attributes.class || '';
+  header.header(class="#{modiffers}")
+    .header__wrapper
+      .header__logo-single ДОСТУП К «HTTP://FILEPORTALCC.ORG»
+        span Стоимость услуги: 20.32 руб. с НДС за 1 день с основного/контентного счета МТС.
+

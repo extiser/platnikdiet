@@ -7,6 +7,37 @@
 
     @include bg($logo);
   }
+  &__logo-single {
+    position: relative;
+
+    box-sizing: border-box;
+    max-width: 580px;
+    margin: auto;
+    padding-left: 72px;
+
+    color: #4e4e4e;
+
+    font-family: $RobotoCondensed-Regular;
+    font-size: rem-calc(31);
+    font-weight: bold;
+    span {
+      display: block;
+
+      color: #999;
+
+      font-size: rem-calc(15);
+      font-weight: normal;
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include bg($logo-single);
+      @include vertical-center;
+    }
+  }
   &._main {
     position: absolute;
     z-index: 1;

@@ -22,6 +22,12 @@
   font-family: $RobotoCondensed-Regular;
 
   @include transition;
+  &._x-big {
+    width: 500px;
+    height: 88px;
+    font-size: rem-calc(33);
+    line-height: rem-calc(85);
+  }
   &._v-big {
     width: 397px;
     height: 64px;

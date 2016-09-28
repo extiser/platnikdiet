@@ -1,10 +1,10 @@
 extends _layout
 
 block header
-  +header()._inside
+  +header-single()._inside
 
 block content
-  //- +registration-sec(data, 'reg2-1')
+  +registration2-1(data, 'reg2-1')
 
 block footer
-  +footer(data, 'inside')._inside
+  +footer(data, 'reg2-1')._inside

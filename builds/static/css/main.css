@@ -422,6 +422,13 @@ blockquote {
   transition: all 0.4s ease-in-out;
 }
 
+.button._x-big {
+  width: 500px;
+  height: 88px;
+  font-size: 2.0625rem;
+  line-height: 5.3125rem;
+}
+
 .button._v-big {
   width: 397px;
   height: 64px;
@@ -695,6 +702,41 @@ html, body {
   background-repeat: no-repeat;
 }
 
+.header__logo-single {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 580px;
+  margin: auto;
+  padding-left: 72px;
+  color: #4e4e4e;
+  font-family: "RobotoCondensed-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.9375rem;
+  font-weight: bold;
+}
+
+.header__logo-single span {
+  display: block;
+  color: #999;
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+
+.header__logo-single:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -73px -56px;
+  width: 50px;
+  height: 50px;
+  background-size: 500px, 107px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .header._main {
   position: absolute;
   z-index: 1;
@@ -870,7 +912,7 @@ html, body {
   left: 4px;
   content: "";
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -99px -56px;
+  background-position: -153px -56px;
   width: 16px;
   height: 15px;
   background-size: 500px, 107px;
@@ -1173,6 +1215,13 @@ html, body {
   }
 }
 
+.registration-block-form._reg2-1 {
+  width: 500px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
 .registration-block-form__label {
   margin-bottom: 10px;
   font-family: "RobotoCondensed-Regular", Helvetica, Arial, sans-serif;
@@ -1197,7 +1246,7 @@ html, body {
   left: 15px;
   content: "";
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -73px -56px;
+  background-position: -127px -56px;
   width: 22px;
   height: 36px;
   background-size: 500px, 107px;
@@ -1265,6 +1314,58 @@ html, body {
 
 .registration-block-form__inline .registration-block-form__field input {
   margin-bottom: 5px;
+}
+
+.registration-block-form__inline-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-block-form__inline-custom._captcha {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+}
+
+.registration-block-form__inline-custom._captcha .registration-block-form__label img {
+  margin-top: 10px;
+}
+
+.registration-block-form__inline-custom._captcha .registration-block-form__field {
+  margin-top: 25px;
+}
+
+.registration-block-form__inline-custom .registration-block-form__label {
+  width: 255px;
+}
+
+.registration-block-form__inline-custom .registration-block-form__label img {
+  display: block;
+}
+
+.registration-block-form__inline-custom .registration-block-form__field {
+  width: 240px;
+}
+
+.registration-block-form__inline-custom .registration-block-form__field input {
+  margin-bottom: 5px;
+}
+
+.registration-block-form__error {
+  padding-right: 20px;
+  padding-bottom: 5px;
+  color: #f03;
+  font-family: "RobotoCondensed-Regular", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
 }
 
 .user-profile {
@@ -1340,7 +1441,7 @@ html, body {
   left: 10px;
   content: "";
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -119px -56px;
+  background-position: -173px -56px;
   width: 16px;
   height: 12px;
   background-size: 500px, 107px;
@@ -1353,7 +1454,7 @@ html, body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -139px -56px;
+  background-position: -193px -56px;
   width: 14px;
   height: 5px;
   background-size: 500px, 107px;

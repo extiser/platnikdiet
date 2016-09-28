@@ -4,16 +4,60 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"margin-right"
+				"fon",
+				"font-family"
 			],
 			[
-				"padd",
-				"padding-top"
+				"text",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-top"
 			],
 			[
 				"pad",
 				"padding-bottom"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"pro",
+				"profile-settings-form__select"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"tabl",
+				"table"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"head",
+				"header-user"
 			],
 			[
 				"font",
@@ -32,10 +76,6 @@
 				"min-width"
 			],
 			[
-				"fon",
-				"font-family"
-			],
-			[
 				"space",
 				"space-between"
 			],
@@ -46,10 +86,6 @@
 			[
 				"registration-blo",
 				"registration-block-form"
-			],
-			[
-				"marign",
-				"margin-bottom"
 			],
 			[
 				"regi",
@@ -84,14 +120,6 @@
 				"peoples-list-item"
 			],
 			[
-				"back",
-				"background"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
 				"adv",
 				"advantage"
 			],
@@ -106,10 +134,6 @@
 			[
 				"backgrou",
 				"background"
-			],
-			[
-				"head",
-				"header"
 			],
 			[
 				"has",
@@ -490,30 +514,6 @@
 			[
 				"section-gallery-sl",
 				"section-gallery-slide-information"
-			],
-			[
-				"section-gallery-s",
-				"section-gallery-slide-information"
-			],
-			[
-				"tarns",
-				"transform"
-			],
-			[
-				"background",
-				"background-color"
-			],
-			[
-				"le",
-				"left"
-			],
-			[
-				"section-map-information-con",
-				"section-map-information-contact__item"
-			],
-			[
-				"sect",
-				"section-map-information"
 			]
 		]
 	},
@@ -593,31 +593,34 @@
 	[
 		"/Users/extiser/git/dietplatnik/markup",
 		"/Users/extiser/git/dietplatnik/markup/components",
-		"/Users/extiser/git/dietplatnik/markup/components/footer",
-		"/Users/extiser/git/dietplatnik/markup/components/registration",
 		"/Users/extiser/git/dietplatnik/markup/pages",
-		"/Users/extiser/git/dietplatnik/markup/static/scss",
-		"/Users/extiser/git/dietplatnik/markup/static/scss/plugins"
+		"/Users/extiser/git/dietplatnik/markup/static",
+		"/Users/extiser/git/dietplatnik/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/dietplatnik/markup/pages/profile.jade",
+		"/Users/extiser/git/dietplatnik/tars-config.js",
+		"/Users/extiser/git/dietplatnik/markup/components/user-profile/user-profile.jade",
+		"/Users/extiser/git/dietplatnik/markup/components/user-profile/user-profile.scss",
+		"/Users/extiser/git/dietplatnik/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/dietplatnik/markup/pages/_layout.jade",
+		"/Users/extiser/git/dietplatnik/markup/components/header/header.jade",
+		"/Users/extiser/git/dietplatnik/markup/components/header/header.scss",
 		"/Users/extiser/git/dietplatnik/markup/components/registration/registration.scss",
 		"/Users/extiser/git/dietplatnik/markup/components/registration/registration.jade",
 		"/Users/extiser/git/dietplatnik/markup/components/footer/footer.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-4-2.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-4-1.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-3-3.jade",
-		"/Users/extiser/git/dietplatnik/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-3-2.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-2-1.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-3-1.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-1-2.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-1.jade",
-		"/Users/extiser/git/dietplatnik/markup/pages/_layout.jade",
 		"/Users/extiser/git/dietplatnik/markup/pages/reg-1_2.jade",
 		"/Users/extiser/git/dietplatnik/markup/components/footer/footer.scss",
 		"/Users/extiser/git/dietplatnik/markup/pages/index.jade",
-		"/Users/extiser/git/dietplatnik/markup/components/header/header.scss",
 		"/Users/extiser/git/dietplatnik/markup/components/peoples/peoples.jade",
 		"/Users/extiser/git/dietplatnik/markup/components/peoples/peoples.scss",
 		"/Users/extiser/git/dietplatnik/markup/components/master/master.scss",
@@ -632,7 +635,6 @@
 		"/Users/extiser/git/dietplatnik/markup/components/advantages/data/data.js",
 		"/Users/extiser/git/ozone/markup/components/tabs/tabs.jade",
 		"/Users/extiser/git/ozone/markup/components/tabs/data/data.js",
-		"/Users/extiser/git/dietplatnik/markup/components/header/header.jade",
 		"/Users/extiser/git/dietplatnik/markup/static/scss/mixins.scss",
 		"/Users/extiser/git/eva/markup/static/scss/mixins.scss",
 		"/Users/extiser/git/eva/markup/static/scss/fonts.scss",
@@ -724,11 +726,7 @@
 		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/stylus/partials/programmy-1s/arenda-programm-1s/c-demo-review.styl",
 		"/Users/extiser/MAMP/wiseadvice.ru/local/markup/forms/partial.php",
 		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/stylus/partials/programmy-1s/arenda-programm-1s/c-why-rent-us.styl",
-		"/Users/extiser/MAMP/wiseadvice.ru/local/markup/programmy-1s/arenda-programm-1s/index.php",
-		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/stylus/partials/blocks/c-agaile-intro.styl",
-		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/js/compare/compare-calculator.js",
-		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/js/compare/compare-table.js",
-		"/Users/extiser/MAMP/wiseadvice.ru/local/.development/src/stylus/partials/uslugi-1s/experience-section.styl"
+		"/Users/extiser/MAMP/wiseadvice.ru/local/markup/programmy-1s/arenda-programm-1s/index.php"
 	],
 	"find":
 	{
@@ -763,6 +761,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"label",
+			".profile-settings-form__field",
 			"radio-block",
 			"solutions-nav",
 			"experience-section",
@@ -888,9 +888,7 @@
 			"c-chart",
 			"Экспертное",
 			"Холдинг",
-			"Холд",
-			"3 технологии",
-			"Выполним"
+			"Холд"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -898,6 +896,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"label.profile-settings-form__label",
+			".profile-settings-form-row",
 			"<div",
 			"div>",
 			"/div",
@@ -1023,9 +1023,7 @@
 			"",
 			".pagination__item",
 			"order-by",
-			"/images/",
-			"../images/sprite.png",
-			"/images"
+			"/images/"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -1084,7 +1082,7 @@
 	"project": "dietplatnik.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":
